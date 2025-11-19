@@ -1,2 +1,5 @@
 # Portafolio-de-Trabajo
-Portafolio de todos los trabajos elaborados por mi
+He aqui los proyectos elaborados más importantes:
+
+Proyecto Coffee Code
+Pagina web elaborada con HTML y CSS para adentrarme en el apartado de FrontEnd
