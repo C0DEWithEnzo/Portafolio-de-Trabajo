@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    background: linear-gradient(135deg, #a8e063 0%, #56ab2f 100%);
+    min-height: 100vh; 
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;
+}
+
+.div-container {
+    background: rgba(255, 255, 255, 0.95); 
+    padding: 40px;
+    border-radius: 20px; 
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2); 
+    width: 400px;
+    backdrop-filter: blur(10px); 
+}
+
+h2 {
+    text-align: center;
+    color: #2d6a4f; 
+    margin-bottom: 25px;
+    margin-top: 0;
+    font-size: 28px;
+    letter-spacing: -0.5px;
+}
+
+.input-grupo {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+#inputTarea {
+    flex-grow: 1;
+    padding: 12px 15px;
+    border-radius: 12px;
+    border: 2px solid #e0e0e0; 
+    background-color: #e9e8e8;
+    outline: none;
+    color: #333;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+#inputTarea:focus {
+    border-color: #56ab2f; 
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgba(86, 171, 47, 0.1); 
+}
+
+#inputTarea::placeholder {
+    text-align: center;
+    color: rgba(0, 100, 0, 0.5);
+}
+
+.input-grupo button {
+    background-color: #2d6a4f;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+    box-shadow: 0 4px 6px rgba(45, 106, 79, 0.2);
+}
+
+.input-grupo button:hover {
+    background-color: #1b4332;
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 12px rgba(45, 106, 79, 0.3);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background: #fff;
+    border-radius: 12px; 
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    border-left: 5px solid #56ab2f; 
+    animation: slideIn 0.3s ease-out forwards;
+}
+
+li:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+li span {
+    flex-grow: 1;
+    cursor: pointer;
+    font-size: 16px;
+    color: #444;
+    word-break: break-all; 
+}
+
+.tarea-completada {
+    color: #aaa !important;
+    background-color: #f4f4f4;
+    border-left-color: #aaa; 
+    box-shadow: none; 
+}
+
+.tarea-completada span{
+    text-decoration: line-through;
+}
+
+.btn-eliminar {
+    background-color: #ffebee; 
+    color: #c62828; 
+    margin-left: 15px;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-eliminar:hover {
+    background-color: #ffcdd2;
+    color: #b71c1c;
+    transform: scale(1.1) rotate(5deg); 
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
